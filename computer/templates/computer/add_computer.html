@@ -1,0 +1,16 @@
+{% extends 'computer/base.html' %}
+{% block title%}
+Regirstration of Computers
+{% endblock title%}
+
+{% block content %}
+
+    <form method="POST">
+        <h3>Add Computer Detail</h3>
+        {% csrf_token %}
+        {{form.as_p}}
+        <input type="submit" value="Submit">
+    </form>
+    <br>
+    <a href="{% url 'computerlist'%}"><input type="submit" value="Back to home"></a>
+    {% endblock content%}

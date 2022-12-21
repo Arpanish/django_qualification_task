@@ -1,0 +1,41 @@
+.createcomputerinfo{
+    font-size: larger;
+    font-weight: bolder;
+    margin-left: 5%; 
+}
+.computername{
+    text-decoration: none; 
+    color:black;
+}
+table {
+    border-collapse: collapse; 
+    border: 1px solid black;
+    margin-left: auto;
+    margin-right: auto; 
+    margin-top: 2%;
+}
+th,td{
+    padding-left: 10px;
+}
+.btn-primary{
+    margin-left: 3%;
+}
+.submain{
+    width:20%;
+    padding: 20px;
+    margin-top: 4%;
+    margin-left: auto;
+    margin-right: auto;
+    /* text-align: center; */
+   
+} */
+.submain{
+    text-align:left;
+    margin-top: 5%;
+    /* padding: 7%; */
+    padding-left: 17%;
+}
+.detail{
+    margin-top: 15px;
+    padding: 2px;
+}

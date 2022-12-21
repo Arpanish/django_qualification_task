@@ -1,0 +1,25 @@
+{% extends 'computer/base.html' %}
+{% block title%}
+Computer Detail
+{% endblock title%}
+
+{% block content %}
+<div class="submain"> 
+   
+<img src = "{{ detail.computer.brand.logo.url }}" width ="140" height = "110">
+<div class="detail">
+<h6>Brand : {{detail.computer.brand.brand_name}}</h6>
+<h6>Computer Code : {{ detail.computer_code }}</h6>
+<h6>Generation :{{detail.computer.generation}}</h6>
+<h6>Price Minimum :  Rs. {{detail.computer.price_min}}</h6>
+<h6>Price Maximum :  Rs. {{detail.computer.price_max}}</h6>
+<h6>RAM :{{detail.computer.ram}} GB</h6>
+<h6>Quantity :{{detail.quantity}}</h6>
+<h6>Unit rate : {{ detail.unit_rate }}</h6>
+<h6>Total price : Rs. {{ detail.total_price }}</h6>
+    </table>
+<br>
+<a href="{% url 'computerlist'%}"><input type="submit" value="Back to home"></a>
+</div>
+</div>
+{% endblock content %}

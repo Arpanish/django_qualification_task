@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+    <head>
+        <title>
+        {% block title%}
+        Home Page
+        {% endblock title%}
+        </title>
+        <link rel="stylesheet" href="{% static 'computer/CSS/main.css' %}">
+        <link rel="stylesheet" href="{% static 'computer/CSS/bootstrap.min.css' %}">
+        {% block style %}
+        {% endblock style %}
+    </head>
+    <body>      
+        {% block content %}
+        {% endblock content %}
+    </body>
+</html>
